@@ -8,16 +8,13 @@ WORKDIR /app
 COPY . /app
 
 # Installer les dépendances nécessaires
-RUN pip install --no-cache-dir dash plotly gunicorn
+RUN pip install --no-cache-dir requirements.txt
 
 # Rendre le script exécutable
 RUN chmod +x start.sh
 
 # Exposer le port sur lequel l'application s'exécute
 EXPOSE 8050
-
-# Commande pour lancer l'application
-CMD ["gunicorn", "--bind", "0.0.0.0:8050", "app:server"]
 
 # Commande pour lancer l'application
 CMD ["./start.sh"]
