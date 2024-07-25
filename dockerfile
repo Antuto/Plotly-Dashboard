@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Installer les dépendances nécessaires
-RUN pip install --no-cache-dir dash plotly gunicorn
+RUN pip install --no-cache-dir dash plotly gunicorn pandas
 
 # Rendre le script exécutable
 RUN chmod +x start.sh
