@@ -1,2 +1,2 @@
 #!/bin/sh
-gunicorn --bind 0.0.0.0:8050 app:server
+gunicorn --bind 127.0.0.1:8050 app:server
