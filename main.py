@@ -35,7 +35,8 @@ def change_colorscale(scale,color):
         template = "plotly_dark"
     )
     return fig
+
 server = app.server
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='127.0.0.1')
