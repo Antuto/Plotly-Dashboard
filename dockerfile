@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir dash plotly gunicorn
 EXPOSE 8050
 
 # Commande pour lancer l'application
-CMD ["gunicorn", "--bind", "0.0.0.0:8050", "app:server"] #test
+CMD ["gunicorn", "--bind", "0.0.0.0:8050", "app:server"]
